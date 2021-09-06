@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.amira.navigationdrawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_showRooms_Fragment"
+            app:destination="@id/nav_showroom" />
+        <action
+            android:id="@+id/action_nav_home_to_news_Fragment"
+            app:destination="@id/nav_news" />
+        <action
+            android:id="@+id/action_nav_home_to_privililegeProgram_Fragment"
+            app:destination="@id/nav_privilageProgram" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_partners" />
+        <action
+            android:id="@+id/action_nav_home_to_contactUs_Fragment"
+            app:destination="@id/nav_contact" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.amira.navigationdrawer.ui.gallery.ui.GalleryFragment"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_partners"
+        android:name="com.amira.navigationdrawer.ui.ourpartner.OurpartnerFragment"
+        tools:layout="@layout/fragment_ourpartners" />
+    <fragment
+        android:id="@+id/nav_privilageProgram"
+        android:name="com.amira.navigationdrawer.ui.privilegeprogram.PrivililegeProgramFragment"
+        tools:layout="@layout/fragment_privililege_program_" />
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.amira.navigationdrawer.ui.news.NewsFragment"
+        tools:layout="@layout/fragment_news_" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.amira.navigationdrawer.ui.contact_us.ContactUsFragment"
+        tools:layout="@layout/fragment_contact_us_" />
+    <fragment
+        android:id="@+id/nav_showroom"
+        android:name="com.amira.navigationdrawer.ui.showrooms.ShowRoomsFragment"
+        tools:layout="@layout/fragment_show_rooms_" />
+</navigation>

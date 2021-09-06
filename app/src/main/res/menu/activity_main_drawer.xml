@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="HomePage"
+            />
+        <item
+            android:id="@+id/nav_privilageProgram"
+            android:title="Privilege Program" />
+        <item
+            android:id="@+id/nav_news"
+            android:title="News" />
+        <item
+            android:id="@+id/nav_partners"
+            android:title="Our partners" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_showroom"
+            android:title="Showrooms and Services Centers" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Setting" />
+
+        <item android:title="follow us"/>
+
+
+
+    </group>
+</menu>

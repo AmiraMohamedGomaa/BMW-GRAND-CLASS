@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/news_bg"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <GridLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:id="@+id/pp_view"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:layout_marginRight="0dp"
+            android:background="#80000000"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/home_latest_news"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:text="PRIVILEGE PROGRAM"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/op_view"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:layout_marginRight="0dp"
+            android:background="#80000000"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/our_partners_home_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:text="OUR PARTNERS"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/galley_view"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#80000000"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/home_latest_news"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="GALLERY"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/news_view"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#80000000"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/home_latest_news"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="NEWS"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/contactus_view"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#80000000"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/home_contact_us"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:text="CONTACT US"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/showrooms_view"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="#80000000"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/show_rooms_home_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/showrooms_service_centers"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/fb_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/gold"
+            android:background="@drawable/social_fb"/>
+        <Button
+            android:id="@+id/twitter_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/gold"
+            android:background="@drawable/social_twitter"/>
+        <Button
+            android:id="@+id/instagram_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/gold"
+            android:background="@drawable/social_instgram"/>
+        <Button
+            android:id="@+id/youtube_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/gold"
+            android:background="@drawable/nav_social_youtupe"/>
+    </LinearLayout>
+
+
+</LinearLayout>
